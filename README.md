@@ -1,4 +1,4 @@
-## HIT 编译原理实验2
+## HIT 编译原理实验3
 - 依赖
 
   bison，flex，gcc，gnu make
