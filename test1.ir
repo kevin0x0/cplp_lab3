@@ -1,0 +1,27 @@
+FUNCTION main :
+t0 := CALL read
+IF t0 <= #0 GOTO L0
+ARG #1
+t1 := CALL write
+GOTO L1
+LABEL L0 :
+IF t0 >= #0 GOTO L2
+t3 := #-1
+ARG t3
+t2 := CALL write
+GOTO L3
+LABEL L2 :
+ARG #0
+t4 := CALL write
+LABEL L3 :
+LABEL L1 :
+RETURN #0
+
+FUNCTION read :
+READ t5
+RETURN t5
+
+FUNCTION write :
+PARAM t6
+WRITE t6
+RETURN #0
